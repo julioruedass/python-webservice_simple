@@ -13,6 +13,6 @@ def home():
 @app.route('/error')
 def error():
     return jsonify({'status': 'inactive','message': "error",'code':0})
-
+ 
 if __name__ == '__main__':
     app.run() 
