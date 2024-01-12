@@ -7,3 +7,5 @@ git commit -m "first commit"
 git remote add origin https://github.com/julioruedass/python-webservice_simple.git
 
 git push -u origin master
+
+git push origin main --force

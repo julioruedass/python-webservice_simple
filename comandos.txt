@@ -28,6 +28,12 @@
     https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es
 #verificar estatus demonio de docker
     sudo systemctl status docker
+#agregar usus a grupo de docker
+    sudo usermod -aG docker ${USER}    
+
+#verificar docker
+id -nG
+
 #crear imagen docker de pythom
 
 
