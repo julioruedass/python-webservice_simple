@@ -1,6 +1,11 @@
+git config --global user.name "julioruedass"
+git config --global user.email deviidssotoo@gmail.com
+
 git init
 
 git add .
+
+git status
 
 git commit -m "first commit"
 

@@ -29,13 +29,34 @@
 #verificar estatus demonio de docker
     sudo systemctl status docker
 #agregar usus a grupo de docker
+    sudo groupadd docker
     sudo usermod -aG docker ${USER}    
 
 #verificar docker
 id -nG
 
+
+#habilitar
+ sudo systemctl enable docker.service
+ sudo systemctl enable containerd.service
+#desabilitar
+ sudo systemctl disable docker.service
+ sudo systemctl disable containerd.service
+
+
+#Agregar usuario a docker
+sudo groupadd docker
+ sudo usermod -aG docker $USER
+ sudo usermod -aG docker dagata
+ newgrp docker
+ #verificar
+ docker run hello-world
+
 #crear imagen docker de pythom
+    docker build -t simpleServer .
 
 
 
-
+comprimir 
+rar a nombre_fichero_comprimido.rar nombre_fichero_a_comprimir
+rar a nombre_fichero_comprimido.rar *
